@@ -8,8 +8,8 @@
     "test": "./node_modules/.bin/mocha --exit --timeout 10000 spec test/",
     "debug": "./node_modules/.bin/mocha --exit --timeout 10000 --reporter spec test/",
     "start": "node app.js",
-    "dev-start": "DEBUG=* DEBUG_PRETTY=1 NODE_ENV=dev PORT=3059 npm start",
-    "dev-test": "DEBUG=debug:lineberty:* DEBUG_PRETTY=1 NODE_ENV=dev npm test"
+    "dev-start": "DEBUG=* LINEBERTY_SERVICE=https://api-booking.winter.lineberty.net LINEBERTY_VERSION=v1 DEBUG_PRETTY=1 NODE_ENV=dev PORT=3059 npm start",
+    "dev-test": "DEBUG=debug:lineberty:* LINEBERTY_SERVICE=https://api-booking.winter.lineberty.net LINEBERTY_VERSION=v1 NODE_ENV=dev PORT=3059 npm test"
   },
   "dependencies": {
     "axios": "^0.18.0",
